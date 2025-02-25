@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asset/Group.png" type="image/x-icon">
     <title>Payoo Mobile App</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- External Css Link -->
+    <link rel="stylesheet" href="style/style.css">
 </head>
-<body>
-    
+<body class="bg-gray-900">
+    <section class="max-w-lg mx-auto h-screen bg-white p-10">
+        <div class="mt-48">
+
+            <!-- logo -->
+            <div class="w-80 logo relative mx-auto">
+                <img src="asset/Rectangle 2.png" alt="">
+                <img class="absolute left-[40%] top-10" src="asset/Group.png" alt="">
+            </div>
+
+            <!-- login Form -->
+            <form class="login-form-container" action="">
+                <div class="card bg-base-100 w-full shadow-2xl rounded-2xl">
+                    <div class="card-body">
+                      <fieldset class="fieldset">
+                        <label class="text-lg font-normal">Mobile Number</label>
+                        <input type="text" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Enter your number" required />
+                        <label class="text-lg font-normal">4 Digit Pin</label>
+                        <input type="text" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Enter 4 Digit Pin" required />
+                        <button class="p-4 text-white mt-4 rounded-3xl bg-[#0874F2] border-none text-xl font-semibold cursor-pointer">Login</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+
+        </div>
+    </section>
 </body>
 </html>
