@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asset/Group.png" type="image/x-icon">
+    <title>Payooo! Dashboard</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- External Css Link -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="bg-gray-900">
+    <section class="max-w-lg mx-auto h-screen bg-white">
+        
+        <!-- Header Start -->
+        <header class="p-5 flex justify-between items-center border-b border-gray-200">
+
+            <!-- Left -->
+            <div class="header-left flex gap-2 items-center">
+
+                <div class="logo">
+                    <img class="w-14" src="asset/Group.png" alt="">
+                </div>
+                <div class="main-balance">
+                    <h2 class="text-lg font-extrabold">$<span>45000</span></h2>
+                    <p class="text-[14px] text-gray-500">Available Balance</p>
+                </div>
+
+            </div>
+            <!-- Right -->
+            <div class="header-right">
+                <button class="flex items-center gap-2 border-2 border-gray-200 p-3 rounded-xl cursor-pointer text-blue-600 text-lg font-medium hover:bg-black"><img class="w-5"  src="asset/Frame.png" alt="">Log Out</button>
+            </div>
+
+        </header>
+
+        <!-- Main Section Start -->
+         <main class="p-5">
+
+            <!-- Main title Text -->
+            <div class="main-text py-7">
+                <h2 class="text-3xl font-bold flex gap-1 items-center mb-5"><img class="w-9" src="asset/fire.png" alt=""> Welcome to Payooo!</h2>
+                <p class="text-base text-gray-600">Enjoy easy and convenient financial services with us.<br> Cashout charge is low and </p>
+            </div>
+
+            <!-- Feature Section -->
+            <section>
+                <div class="feature-container grid grid-cols-3 gap-5">
+                    <!-- Card-1 -->
+                    <div class="card text-center border-1 border-gray-300 px-6 py-5 cursor-pointer">
+                        <img class="w-7 mx-auto" src="asset/wallet 1.png" alt="">
+                        <h5>Add Money</h5>
+                    </div>
+
+                    <!-- Card-2 -->
+                    <div class="card text-center border-1 border-gray-300 px-6 py-5 cursor-pointer">
+                        <img class="w-7 mx-auto" src="asset/send 1.png" alt="">
+                        <h5>Cash out</h5>
+                    </div>
+
+                    <!-- Card-3 -->
+                    <div class="card text-center border-1 border-gray-300 py-5 cursor-pointer">
+                        <img class="w-7 mx-auto" src="asset/money 1.png" alt="">
+                        <h5>Transfer Money</h5>
+                    </div>
+
+                    <!-- Card-4 -->
+                    <div class="card text-center border-1 border-gray-300 px-6 py-5 cursor-pointer">
+                        <img class="w-7 mx-auto" src="asset/financial 1.png" alt="">
+                        <h5>Get Bonus</h5>
+                    </div>
+
+                    <!-- Card-5 -->
+                    <div class="card text-center border-1 border-gray-300 px-6 py-5 cursor-pointer">
+                        <img class="w-7 mx-auto" src="asset/purse 1.png" alt="">
+                        <h5>Pay Bill</h5>
+                    </div>
+
+                    <!-- Card-6 -->
+                    <div class="card text-center border-1 border-gray-300 px-6 py-5 cursor-pointer">
+                        <img class="w-7 mx-auto" src="asset/financial 1.png" alt="">
+                        <h5>Transactions</h5>
+                    </div>
+
+                </div>
+            </section>
+
+         </main>
+    </section>
+
+    <script src="script/dashboard.js"></script>
+</body>
+</html>
