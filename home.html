@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body class="bg-gray-900">
-    <section class="max-w-lg mx-auto h-screen bg-white">
+    <section class="max-w-lg mx-auto h-auto  bg-white pb-28">
         
         <!-- Header Start -->
         <header class="p-5 flex justify-between items-center border-b border-gray-200">
@@ -35,22 +35,22 @@
             </div>
             <!-- Right -->
             <div class="header-right">
-                <button class="flex items-center gap-2 border-2 border-gray-200 p-3 rounded-xl cursor-pointer text-blue-600 text-lg font-medium hover:bg-black"><img class="w-5"  src="asset/Frame.png" alt="">Log Out</button>
+                <button id="log-out-btn" class="flex items-center gap-2 border-2 border-gray-200 p-3 rounded-xl cursor-pointer text-blue-600 text-lg font-medium hover:bg-black"><img class="w-5"  src="asset/Frame.png" alt="">Log Out</button>
             </div>
 
         </header>
 
         <!-- Main Section Start -->
-         <main class="p-5">
+         <main>
 
             <!-- Main title Text -->
-            <div class="main-text py-7">
+            <div class="main-text py-7 px-5">
                 <h2 class="text-3xl font-bold flex gap-1 items-center mb-5"><img class="w-9" src="asset/fire.png" alt=""> Welcome to Payooo!</h2>
                 <p class="text-base text-gray-600">Enjoy easy and convenient financial services with us.<br> Cashout charge is low and </p>
             </div>
 
             <!-- Feature Section -->
-            <section>
+            <section class="shadow-md pb-8 px-5 rounded-bl-3xl rounded-br-3xl">
                 <div class="feature-container grid grid-cols-3 gap-5">
                     <!-- Card-1 -->
                     <div class="card text-center border-1 border-gray-300 px-6 py-5 cursor-pointer">
@@ -91,9 +91,46 @@
                 </div>
             </section>
 
+            <!-- Transaction Section -->
+            <section class="mt-5 px-5">
+
+            <!-- Add Money -->
+                <div id="add-money-section" class="">
+                    <h2 class="mb-5 text-2xl font-extrabold text-blue-500">Add Money</h2>
+                    <form class="login-form-container" action="">
+                        <div class="card bg-base-100 w-full shadow-2xl rounded-2xl">
+                            <div class="card-body">
+                              <fieldset class="fieldset">
+                                <label class="text-lg font-normal">Select A Bank</label>
+                                <select class="select w-full h-14 rounded-3xl bg-[#F4F5F7] border-none text-[16px]">
+                                    <option disabled selected class="">Select bank</option>
+                                    <option>Bkash</option>
+                                    <option>Rocket</option>
+                                    <option>Nogod</option>
+                                    <option>Upay</option>
+                                </select>
+        
+                                <label class="text-lg font-normal">Bank Account Number</label>
+                                <input type="number" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Enter 11 digit account number" required />
+        
+                                <label class="text-lg font-normal">Amount to Add</label>
+                                <input type="number" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Add Amount to withdraw" required />
+        
+                                <label class="text-lg font-normal">4 Digit Pin</label>
+                                <input type="text" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Enter 4 Digit Pin" required />
+                                <button class="p-4 text-white mt-4 rounded-3xl bg-[#0874F2] border-none text-xl font-semibold cursor-pointer hover:bg-black delay-100">Add Money</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                    </form>
+                </div>
+
+             </section>
+
          </main>
     </section>
 
     <script src="script/dashboard.js"></script>
+    <script src="script/login.js"></script>
 </body>
 </html>
