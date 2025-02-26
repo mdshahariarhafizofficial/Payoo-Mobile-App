@@ -19,7 +19,7 @@
     <section class="max-w-lg mx-auto h-auto  bg-white pb-28">
         
         <!-- Header Start -->
-        <header class="p-5 flex justify-between items-center border-b border-gray-200">
+        <header class="sticky top-0 bg-white z-50 p-5 flex justify-between items-center border-b border-gray-200">
 
             <!-- Left -->
             <div class="header-left flex gap-2 items-center">
@@ -27,8 +27,8 @@
                 <div class="logo">
                     <img class="w-14" src="asset/Group.png" alt="">
                 </div>
-                <div class="main-balance">
-                    <h2 class="text-lg font-extrabold">$<span>45000</span></h2>
+                <div class="main-balance-container">
+                    <h2 class="text-2xl font-extrabold">$<span id="main-balance">45000</span></h2>
                     <p class="text-[14px] text-gray-500">Available Balance</p>
                 </div>
 
@@ -95,7 +95,7 @@
             <section class="mt-5 px-5">
 
             <!-- Add Money -->
-                <div id="add-money-section" class="hidden">
+                <div id="add-money-section" class="">
                     <h2 class="mb-5 text-2xl font-extrabold text-blue-500">Add Money</h2>
                     <form class="login-form-container" action="">
                         <div class="card bg-base-100 w-full shadow-2xl rounded-2xl">
@@ -111,14 +111,14 @@
                                 </select>
         
                                 <label class="text-lg font-normal">Bank Account Number</label>
-                                <input type="number" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Enter 11 digit account number" required />
+                                <input id="ac-no." type="number" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Enter 11 digit account number" required value="12345678911" />
         
                                 <label class="text-lg font-normal">Amount to Add</label>
-                                <input type="number" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Add Amount to withdraw" required />
+                                <input id="amount" type="number" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Add Amount to withdraw" required value="5" />
         
                                 <label class="text-lg font-normal">4 Digit Pin</label>
-                                <input type="text" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Enter 4 Digit Pin" required />
-                                <button class="p-4 text-white mt-4 rounded-3xl bg-[#0874F2] border-none text-xl font-semibold cursor-pointer hover:bg-black delay-100">Add Money</button>
+                                <input id="deposit-pin" type="text" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Enter 4 Digit Pin" required value="1234" />
+                                <button id="add-money-btn" class="p-4 text-white mt-4 rounded-3xl bg-[#0874F2] border-none text-xl font-semibold cursor-pointer hover:bg-black delay-100">Add Money</button>
                               </fieldset>
                             </div>
                           </div>
@@ -126,7 +126,7 @@
                 </div>
 
             <!-- Cash Out -->
-                <div id="add-money-section" class="">
+                <div id="add-money-section" class="hidden">
                     <h2 class="mb-5 text-2xl font-extrabold text-blue-500">Cash Out</h2>
                     <form class="login-form-container" action="">
                         <div class="card bg-base-100 w-full shadow-2xl rounded-2xl">
@@ -155,5 +155,6 @@
 
     <script src="script/dashboard.js"></script>
     <script src="script/logout.js"></script>
+    <script src="script/add-money.js"></script>
 </body>
 </html>
