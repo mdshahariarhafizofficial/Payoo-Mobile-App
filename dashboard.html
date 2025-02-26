@@ -95,7 +95,7 @@
             <section class="mt-5 px-5">
 
             <!-- Add Money -->
-                <div id="add-money-section" class="">
+                <div id="add-money-section" class="hidden">
                     <h2 class="mb-5 text-2xl font-extrabold text-blue-500">Add Money</h2>
                     <form class="login-form-container" action="">
                         <div class="card bg-base-100 w-full shadow-2xl rounded-2xl">
@@ -125,12 +125,35 @@
                     </form>
                 </div>
 
+            <!-- Cash Out -->
+                <div id="add-money-section" class="">
+                    <h2 class="mb-5 text-2xl font-extrabold text-blue-500">Cash Out</h2>
+                    <form class="login-form-container" action="">
+                        <div class="card bg-base-100 w-full shadow-2xl rounded-2xl">
+                            <div class="card-body">
+                              <fieldset class="fieldset">
+        
+                                <label class="text-lg font-normal">Agent Number</label>
+                                <input type="number" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Enter 11 digit number" required />
+        
+                                <label class="text-lg font-normal">Amount</label>
+                                <input type="number" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Add Amount to withdraw" required />
+        
+                                <label class="text-lg font-normal">Pin Number</label>
+                                <input type="text" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Enter 4 Digit Pin number" required />
+                                <button class="p-4 text-white mt-4 rounded-3xl bg-[#0874F2] border-none text-xl font-semibold cursor-pointer hover:bg-black delay-100">Withdraw Money</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                    </form>
+                </div>
+
              </section>
 
          </main>
     </section>
 
     <script src="script/dashboard.js"></script>
-    <script src="script/login.js"></script>
+    <script src="script/logout.js"></script>
 </body>
 </html>

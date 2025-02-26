@@ -32,10 +32,10 @@
                     <div class="card-body">
                       <fieldset class="fieldset">
                         <label class="text-lg font-normal">Mobile Number</label>
-                        <input type="text" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Enter your number" required />
+                        <input id="number" type="number" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Enter your number" required />
                         <label class="text-lg font-normal">4 Digit Pin</label>
-                        <input type="text" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Enter 4 Digit Pin" required />
-                        <button class="p-4 text-white mt-4 rounded-3xl bg-[#0874F2] border-none text-xl font-semibold cursor-pointer hover:bg-black delay-100">Login</button>
+                        <input id="pin" type="text" class="p-4 rounded-3xl bg-[#F4F5F7] border-none text-[16px]" placeholder="Enter 4 Digit Pin" required />
+                        <button id="login-btn" class="p-4 text-white mt-4 rounded-3xl bg-[#0874F2] border-none text-xl font-semibold cursor-pointer hover:bg-black delay-100">Login</button>
                       </fieldset>
                     </div>
                   </div>
@@ -43,5 +43,7 @@
 
         </div>
     </section>
+
+    <script src="script/login.js"></script>
 </body>
 </html>
