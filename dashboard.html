@@ -102,7 +102,7 @@
                             <div class="card-body">
                               <fieldset class="fieldset">
                                 <label class="text-lg font-normal">Select A Bank</label>
-                                <select class="select w-full h-14 rounded-3xl bg-[#F4F5F7] border-none text-[16px]">
+                                <select id="select-bank" class="select w-full h-14 rounded-3xl bg-[#F4F5F7] border-none text-[16px]">
                                     <option disabled selected class="">Select bank</option>
                                     <option>Bkash</option>
                                     <option>Rocket</option>
@@ -147,6 +147,15 @@
                           </div>
                     </form>
                 </div>
+                
+            <!--  Transaction History -->
+                <div id="transaction-section" class="">
+                    <h2 class="mb-5 text-2xl font-extrabold text-blue-500">Transactions History </h2>
+                    <div id="transaction-container">
+
+                    </div>
+                </div>
+
             <!--  Common -->
                 <!-- <div id="add-money-section" class="hidden">
                     <h2 class="mb-5 text-2xl font-extrabold text-blue-500">Cash Out</h2>
