@@ -9,6 +9,11 @@ document.getElementById('add-money-btn').addEventListener('click', function (eve
     if ( accountNumber.length === 11) {
         if ( amount <= 0 ) {
             alert('Please Enter valid amount');
+            return;
+        }
+        else if( isNaN(amount) ){
+            alert('Please Enter Your amount');
+            return;
         }
         if ( pin === 1234) {
             const sum = mainBalance+amount;
@@ -35,7 +40,12 @@ document.getElementById('withdraw-btn').addEventListener('click', function(event
 
     if ( agentNumber.length === 11) {
         if (cashOutAmount <= 0) {
-            alert('Enter Valid Amount')
+            alert('Enter Valid Amount');
+            return;
+        }
+        else if( isNaN(cashOutAmount) ){
+            alert('Please Enter Your amount');
+            return;
         }
         if ( cashOutPin === 1234) {
             if ( cashOutAmount > mainBalance) {
