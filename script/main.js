@@ -115,9 +115,17 @@ document.getElementById('transaction-section').style.display = 'none';
 document.getElementById('add-money-card').addEventListener( 'click', function(){
     toggle('cash-out-section', 'none');
     toggle('add-money-section', 'block');
+    toggle('transaction-section', 'none');
 } );
 
 document.getElementById('Cash-out-card').addEventListener('click', function () {
     toggle('cash-out-section', 'block');
     toggle('add-money-section', 'none');
+    toggle('transaction-section', 'none');
+} );
+
+document.getElementById('transaction-card').addEventListener('click', function () {
+    toggle('cash-out-section', 'none');
+    toggle('add-money-section', 'none');
+    toggle('transaction-section', 'block');
 } );
