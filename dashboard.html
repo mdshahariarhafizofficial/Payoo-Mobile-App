@@ -53,13 +53,13 @@
             <section class="shadow-md pb-8 px-5 rounded-bl-3xl rounded-br-3xl">
                 <div class="feature-container grid grid-cols-3 gap-5">
                     <!-- Card-1 -->
-                    <div class="card text-center border-1 border-gray-300 px-6 py-5 cursor-pointer">
+                    <div id="add-money-card" class="card text-center border-1 border-gray-300 px-6 py-5 cursor-pointer">
                         <img class="w-7 mx-auto" src="asset/wallet 1.png" alt="">
                         <h5>Add Money</h5>
                     </div>
 
                     <!-- Card-2 -->
-                    <div class="card text-center border-1 border-gray-300 px-6 py-5 cursor-pointer">
+                    <div id="Cash-out-card" class="card text-center border-1 border-gray-300 px-6 py-5 cursor-pointer">
                         <img class="w-7 mx-auto" src="asset/send 1.png" alt="">
                         <h5>Cash out</h5>
                     </div>
@@ -95,7 +95,7 @@
             <section class="mt-5 px-5">
 
             <!-- Add Money -->
-                <div id="add-money-section" class="hidden">
+                <div id="add-money-section" class="">
                     <h2 class="mb-5 text-2xl font-extrabold text-blue-500">Add Money</h2>
                     <form class="login-form-container" action="">
                         <div class="card bg-base-100 w-full shadow-2xl rounded-2xl">
@@ -126,7 +126,7 @@
                 </div>
 
             <!-- Cash Out -->
-                <div id="add-money-section" class="">
+                <div id="cash-out-section" class="">
                     <h2 class="mb-5 text-2xl font-extrabold text-blue-500">Cash Out</h2>
                     <form class="login-form-container" action="">
                         <div class="card bg-base-100 w-full shadow-2xl rounded-2xl">
@@ -175,9 +175,11 @@
          </main>
     </section>
 
-    <script src="script/dashboard.js"></script>
+    <script src="utilities/utilities.js"></script>
+    <!-- <script src="script/toggle.js"></script> -->
     <script src="script/logout.js"></script>
-    <script src="script/add-money.js"></script>
-    <script src="script/cash-out.js"></script>
+    <script src="script/main.js"></script>
+    <!-- <script src="script/add-money.js"></script> -->
+    <!-- <script src="script/cash-out.js"></script> -->
 </body>
 </html>
